@@ -56,7 +56,6 @@
          </div>
          <!-- Header Left -->
          <div class="header-right">
-
             <ul class="top-header-btns">
                <li class="dropdown">
                   <a class="login-user" data-toggle="dropdown" href="#" title=""> <img src="images/img1.jpg" alt="">
@@ -96,29 +95,6 @@
                         <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
                         <i class="fas fa-sign-out-alt"></i> Logout
                      </a>
-                  </div>
-               </li>
-               <li class="dropdown">
-                  <a class="login-user" data-toggle="dropdown" href="#" title=""> <img src="images/img1.jpg" alt="">
-                  </a>
-                  <div class="dropdown-menu  dropdown-menu-right">
-                     <a class="dropdown-item" href="dashboard.html">
-                        My Account
-                     </a>
-                     <!-- <div class="dropdown-divider"></div> -->
-                     <a class="dropdown-item" href="ChangePass.html">
-                        Change Password
-                     </a>
-                     <a class="dropdown-item" href="ChangePass.html">
-                        Project Details
-                     </a>
-                     <!-- <div class="dropdown-divider"></div> -->
-                     <div style="display: flex; margin-top: 30px;align-items: center;" class="dropdown-item">
-                        <a class="dropdown-item" href="#">
-                           <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
-                           <i class="fas fa-sign-out-alt"></i> Logout
-                        </a>
-                     </div>
                   </div>
                </li>
             </ul>
@@ -201,7 +177,7 @@
                            <p>Mail</p>
                         </div>
                      </li>
-                     <li class="active">
+                     <li>
                         <div class="head-ic-bg">
                            <a href="web.html">
                               <img src="./images/Artboard – 9.svg" class="inactive" alt="icons1">
@@ -212,7 +188,7 @@
                            <p>Web</p>
                         </div>
                      </li>
-                     <li>
+                     <li class="active">
                         <div class="head-ic-bg">
                            <a href="./more.html">
                               <img src="./images/Artboard – 6.svg" class="inactive last____" alt="icons1">
@@ -232,28 +208,22 @@
       <div class="theme-content">
          <aside class="console-sidemenu active" id="sidemenu">
             <nav>
-               <!-- <div class="user logged-in">
-		                     <a class="login-user" href="#" title=""><img src="images/img1.jpg" alt=""></a>
-		                     <div class="user-detail">
-		                        <strong>Joyce Cabardo</strong>
-		                        <i>support@joyce.com</i>
-		                     </div>
-                           <i style="font-size: 20px; margin-top: 10px; cursor: pointer;" class="icon dripicons-align-right"></i> 
-		                  </div> -->
                <ul class="console-menu">
                   <li class="menu-item-has-children" style="background-color: #26bcf2;">
-                     <a href="./web.html" title=""> <span>User Experience Stats</span></a>
+                     <a href="./more.html" title=""> <span>Project Details</span></a>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="./WEB/WebsiteSpeedStats.html" title=""> <span>Website Speed Stats</span></a>
+                     <a href="./More/myAccount.html" title=""> <span>My Account</span></a>
                   </li>
-
+                  <li class="menu-item-has-children">
+                     <a href="./More/updateAccount.html" title=""> <span>Update Account</span></a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="./More/changePass.html" title=""> <span>Change Password</span></a>
+                  </li>
                </ul>
-
-
             </nav>
          </aside>
-
          <!-- Console Sidemenu -->
          <div class="content-area">
             <div id="toparea" class="style1">
@@ -267,58 +237,117 @@
                <div class="container-fluid">
                   <div class="row">
                      <div class="col-12 col-md-11">
-                        <div style="background-color: #d9f0fe;
+                        <div class="" style="background-color: #d9f0fe;
                                                   width: 100%;
                                                   padding: 15px 15px;
-                                                  
                                                   border-bottom: 5px solid #c5eafd;">
                            <div class="res-header d-sm-block d-lg-none d-md-none text-center"
                               style="margin-bottom: -10px;">
                               <p>KPI Advice Dashboard</p>
                            </div>
                            <div class="page-header d-none d-lg-block d-md-block">
-                              <h1 style="font-weight: 500;">User Experience Stats</h1>
+                              <h1 style="font-weight: 500;">Project Details</h1>
                               <p>
                                  << Project Name>> Stats
                               </p>
                            </div>
+
                         </div>
                      </div>
                   </div>
                </div>
-               <div style="min-height: 100%; width: 100%; text-align: center;" class="gap-header">
-                  <div class="container-fluid text-center">
+               <div style="width: 100%; background-color: #333E50; padding-bottom: 120px;" class="gap-header">
+                  <div class="container-fluid">
                      <div class="row">
-                        <div class="col-12 col-md-11">
+                        <div class="col-12 col-md-11" style="padding-left: 25px;">
+                           <h2
+                              style="font-style: italic; color: #AFC6A4; padding-top: 35px; font-size: 26px; margin-bottom: 25px;">
+                              Company
+                           </h2>
+
                            <div>
-                              <iframe
-                                 src="https://datastudio.google.com/embed/reporting/1Pcbfm3MQKl2teGS5JHSsOHm-VNn4LLZH/page/D47b"
-                                 frameborder="0" style="border:0" allowfullscreen></iframe>
+                              <div class="d-flex align-items-center" style="color: #C6CCD7;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Company Logo</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input id="upload" type="file" hidden>
+                                    <label for="upload" class="pt-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem;">Upload</label>
+                                 </div>
+                              </div>
+
+                              <div class="d-flex align-items-center" style="color: #C6CCD7; margin-top: 15px;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Company Name</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input type="text" class="py-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem; background-color: #D6D5DC; width: 100%; cursor: pointer; border: none;">
+                                 </div>
+                              </div>
+
+                              <div class="d-flex align-items-center" style="color: #C6CCD7; margin-top: 15px;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Company Website Link</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input type="url" class="py-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem; background-color: #D6D5DC; width: 100%; cursor: pointer; border: none;">
+                                 </div>
+                              </div>
+
+                              <div class="d-flex align-items-center" style="color: #C6CCD7; margin-top: 15px;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Client Country</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input type="text" class="py-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem; background-color: #D6D5DC; width: 100%; cursor: pointer; border: none;">
+                                 </div>
+                              </div>
+
+                              <div class="d-flex align-items-center" style="color: #C6CCD7; margin-top: 15px;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Project Start Date</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input type="number" class="py-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem; background-color: #D6D5DC; width: 100%; cursor: pointer; border: none;">
+                                 </div>
+                              </div>
+
+                              <div class="d-flex align-items-center" style="color: #C6CCD7; margin-top: 15px;">
+                                 <h4 class="input-name" style="width: 25%; font-size: 15px">Active Services</h4>
+                                 <div style="background-color: #D6D5DC; width: 100%; cursor: pointer;">
+                                    <input type="text" hidden class="py-2 label-res"
+                                       style="font-size: 14px; color: #000; padding-left: .5rem; background-color: #D6D5DC; width: 100%; cursor: pointer; border: none;">
+                                    <label style="font-size: 14px; color: #000; padding-left: .5rem;">Multi
+                                       dropdown<br />
+                                       (SEO, SEM, Web, Email, SMM)
+                                    </label>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-
-         </div>
-      </div>
-      <!-- Footer -->
-      <!-- Footer -->
-      <footer>
-         <div class="container">
-            <div class="row">
-               <div class="col-12 col-md-12 text-center d-flex justify-content-center align-content-center">
-                  <img width="30px" src="./img/Picture1.png" alt="" class="img-fluid mx-2">
-                  <a style="color: rgb(185, 185, 185); text-decoration:none; margin-top: 5px;"
-                     href="www.organizein.com | KPI Dashboard Admin">
-                     www.organizein.com | KPI Dashboard Admin
-                  </a>
+               <div class="text-center py-3 w-50 mx-auto mt-5" style="background-color: #4473C5; color: #ffffff;">
+                  <a href="#">Save Details</a>
                </div>
             </div>
          </div>
-      </footer>
+
+      </div>
    </div>
+   <!-- Footer -->
+   <!-- Footer -->
+   <!-- <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-12 text-center d-flex justify-content-center align-content-center">
+                  <img width="30px" src="./img/Picture1.png" alt="" class="img-fluid mx-2">
+                  <a style="color: rgb(185, 185, 185); text-decoration:none; margin-top: 5px;"
+                      href="www.organizein.com | KPI Dashboard Admin">
+                      www.organizein.com | KPI Dashboard Admin
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer> -->
+   </div>
+
    <script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
    <script src="js/bootstrap_popper.min.js"></script>
    <script src="js/jquery_ui.min.js"></script>
